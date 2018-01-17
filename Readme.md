@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Юлия Крионерова](https://up.htmlacademy.ru/adaptive/13/user/118132).
-* Наставник: `Неизвестно`.
+* Наставник: [Анастасия Норцова](https://htmlacademy.ru/profile/id143546).
 
 ---
 
