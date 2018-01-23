@@ -6,17 +6,25 @@
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header__logo">
+      <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-image" src="img/logo.svg" width="86" height="35" alt="Магазин вязаных вещей Мишка">
       </a>
       <div class="main-nav__wrapper">
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">Каталог товаров</li>
-            <li class="site-list__item">Вязание на заказ</li>
-            <li class="site-list__item">Поиск по сайту</li>
-            <li class="site-list__item">Корзина: <span class="basket-state">пока пуста</span></li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="find.html">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="basket.html">Корзина: <span class="basket-state">пока пуста</span></a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -80,11 +88,11 @@
         </fieldset>
         <fieldset class="order__user-phone">
           <legend class="order__legend">тел</legend>
-          <input class="order__user-field order__user-field--phone" type="text" placeholder="+7 ХХХ ХХ ХХ*" name="phone-number" required>
+          <input class="order__user-field order__user-field--phone" type="tel" placeholder="+7 ХХХ ХХ ХХ*" name="phone-number" required>
         </fieldset>
         <fieldset class="order__user-email">
           <legend class="order__legend">E-mail</legend>
-          <input class="order__user-field order__user-field--email" type="text" placeholder="Ваш Email*" name="email" required>
+          <input class="order__user-field order__user-field--email" type="email" placeholder="Ваш Email*" name="email" required>
         </fieldset>
         <fieldset class="order__extra-info">
           <legend class="order__legend">Доп</legend>

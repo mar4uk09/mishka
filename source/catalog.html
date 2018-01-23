@@ -6,17 +6,25 @@
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header__logo">
+      <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-image" src="img/logo.svg" width="86" height="35" alt="Магазин вязаных вещей Мишка">
       </a>
       <div class="main-nav__wrapper">
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">Каталог товаров</li>
-            <li class="site-list__item">Вязание на заказ</li>
-            <li class="site-list__item">Поиск по сайту</li>
-            <li class="site-list__item">Корзина: <span class="basket-state">пока пуста</span></li>
+            <li class="site-list__item">
+              <a class="site-list__link">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="find.html">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="basket.html">Корзина: <span class="basket-state">пока пуста</span></a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -24,22 +32,28 @@
     <main class="page-main">
       <h1 class="page-main__title">Каталог товаров</h1>
       <article class="product-item">
-        <h2 class="product-item__name">Зайчик-попрыгайчик</h2>
-        <img class="product-item__image" src="img/product1.jpg" width="260" height="195" alt="Товар - Зайчик-попрыгайчик - фото">
+        <a class="product-item__link" href="#">
+          <h2 class="product-item__name">Зайчик-попрыгайчик</h2>
+          <img class="product-item__image" src="img/product1.jpg" width="260" height="195" alt="Товар - Зайчик-попрыгайчик - фото">
+        </a>
         <p class="product-item__description">Рост 30 см, вес 200 г</p>
         <span class="product-item__price">1 200 руб.</span>
         <button class="product-item__buy-button" type="button">Купить товар</button>
       </article>
       <article class="product-item">
-        <h2 class="product-item__name">Корзинка для белья</h2>
-        <img class="product-item__image" src="img/product2.jpg" width="260" height="195" alt="Товар - Корзинка для белья - фото">
+        <a class="product-item__link" href="#">
+          <h2 class="product-item__name">Корзинка для белья</h2>
+          <img class="product-item__image" src="img/product2.jpg" width="260" height="195" alt="Товар - Корзинка для белья - фото">
+        </a>
         <p class="product-item__description">Диаметр 15 см, высота 10 см</p>
         <span class="product-item__price">690 руб.</span>
         <button class="product-item__buy-button" type="button">Купить товар</button>
       </article>
       <article class="product-item">
-        <h2 class="product-item__name">Большая корзинка для игрушек</h2>
-        <img class="product-item__image" src="img/product3.jpg" width="260" height="195" alt="Товар - Большая корзинка для игрушек - фото">
+        <a class="product-item__link" href="#">
+          <h2 class="product-item__name">Большая корзинка для игрушек</h2>
+          <img class="product-item__image" src="img/product3.jpg" width="260" height="195" alt="Товар - Большая корзинка для игрушек - фото">
+        </a>
         <p class="product-item__description">Диаметр 30 см, высота 30 см</p>
         <span class="product-item__price">1 500 руб.</span>
         <button class="product-item__buy-button" type="button">Купить товар</button>
