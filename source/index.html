@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -34,48 +35,52 @@
         <h1 class="visually-hidden">Мишка - интернет-магазин вязаних вещей для дома.</h1>
         <b class="company__slogan">Милые штуки ручной работы для дома</b>
         <a class="company-categories" href="interior.html">
-          <div class="company-categories__block">Предметы  интерьера</div>
+          <div class="company-categories__block company-categories__block--interior">Предметы  <br>интерьера</div>
         </a>
         <a class="company-categories" href="toys.html">
-          <div class="company-categories__block">Детские  игрушки</div>
+          <div class="company-categories__block company-categories__block--toys">Детские  <br>игрушки</div>
         </a>
       </section>
       <section class="product">
-        <h2 class="product__item">Вязаные корзинки</h2>
-        <b class="product__top">ТОВАР НЕДЕЛИ</b>
-        <p class="product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <table class="product__options table">
-          <tr>
-            <td class="table__option">Цвет:</td>
-            <td class="table__value">«Тиффани»/серый</td>
-          </tr>
-          <tr>
-            <td class="table__option">Диаметр:</td>
-            <td class="table__value">25 см</td>
-          </tr>
-          <tr>
-            <td class="table__option">Высота:</td>
-            <td class="table__value">15 см</td>
-          </tr>
-        </table>
-        <div class="product__image">
-          <img class="product__image-photo" src="img/basket.jpg" width="260" height="315" alt="Вязаные корзинки - фото">
+        <div class="product__wrapper">
+          <h2 class="product__item">Вязаные корзинки</h2>
+          <b class="product__top">ТОВАР НЕДЕЛИ</b>
+          <p class="product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <table class="product__options table">
+            <tr>
+              <td class="table__data table__option">Цвет:</td>
+              <td class="table__data table__value">«Тиффани»/серый</td>
+            </tr>
+            <tr>
+              <td class="table__data table__option">Диаметр:</td>
+              <td class="table__data table__value">25 см</td>
+            </tr>
+            <tr>
+              <td class="table__data table__option">Высота:</td>
+              <td class="table__data table__value">15 см</td>
+            </tr>
+          </table>
+          <div class="product__image">
+            <img class="product__image-photo" src="img/basket.jpg" width="260" height="315" alt="Вязаные корзинки - фото">
+          </div>
+          <p class="product__price">Цена: 990 руб.</p>
+          <button class="product__order button" type="button">ЗАКАЗАТЬ</button>
         </div>
-        <p class="product__price">Цена: 990 руб.</p>
-        <button class="product__order button" type="button">ЗАКАЗАТЬ</button>
         <div class="product__modal-window modal-window">
           <h2 class="modal-window__booking">Добавить  в корзину</h2>
           <p class="modal-window__checking-size">Выберите размер:</p>
           <form class="modal-window__booking-form" action="https://echo.htmlacademy.ru" method="post">
-            <label class="modal-window__sizes">
-              <input class="visually-hidden" type="radio" name="product-size" value="S">S
-            </label>
-            <label class="modal-window__sizes">
-              <input class="visually-hidden" type="radio" name="product-size" value="M">M
-            </label>
-            <label class="modal-window__sizes">
-              <input class="visually-hidden" type="radio" name="product-size" value="L">L
-            </label>
+            <div class="modal-window__wrapper">
+              <label class="modal-window__sizes">
+                <input class="visually-hidden" type="radio" name="product-size" value="S">S
+              </label>
+              <label class="modal-window__sizes">
+                <input class="visually-hidden" type="radio" name="product-size" value="M">M
+              </label>
+              <label class="modal-window__sizes">
+                <input class="visually-hidden" type="radio" name="product-size" value="L">L
+              </label>
+            </div>
             <button class="modal-window__booking-button button" type="submit">Добавить</button>
           </form>
         </div>
@@ -138,7 +143,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
   </body>

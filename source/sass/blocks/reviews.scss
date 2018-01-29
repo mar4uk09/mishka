@@ -1,0 +1,58 @@
+.reviews {
+  @include side-paddings;
+  padding-top: 34px;
+  padding-bottom: 45px;
+  background-color: $main-bgcolor;
+  outline: 1px solid blue;/*Временная обводка*/
+}
+
+.reviews__title {
+  padding-bottom: 33px;
+  @include main-font;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__text {
+  margin: 0;
+  padding-bottom: 38px;
+  @include desc-font;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.reviews__author {
+  padding-bottom: 12px;
+  @include main-font;
+  font-size: 17px;
+  font-style: normal;
+  line-height: 24px;
+}
+
+.reviews__author-email {
+  display: block;
+  padding-bottom: 35px;
+  @include desc-font;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.reviews__next,
+.reviews__prev {
+  width: 130px;
+  border: 1px solid #ececec;
+  background-color: $main-bgcolor;
+}
+
+.reviews__next {
+  margin-bottom: 38px;/*Временный отступ, для наглядности*/
+}
+
+.reviews__write {
+  text-align: center;
+  text-decoration: none;
+}

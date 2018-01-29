@@ -1,0 +1,19 @@
+.site-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  outline: 1px solid blue; /*Временная обводка*/
+}
+
+.site-list__item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.site-list__link {
+  @include main-font;
+  font-size: 17px;
+  line-height: 24px;
+  text-decoration: none;
+}
+

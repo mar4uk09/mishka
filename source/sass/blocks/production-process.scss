@@ -1,0 +1,40 @@
+.production-process {
+  margin-left: 30px;
+  margin-right: 30px;
+  border: 1px solid #ececec;
+}
+
+.production-process__title {
+  margin: 0;
+  margin-bottom: 27px;
+  padding-left: 92px;
+  padding-right: 28px;
+  padding-top: 29px;
+  @include main-font;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.production-process__video {
+  margin-bottom: 34px;
+  background-color: #cecece;
+}
+
+.production-process__description {
+  margin: 0;
+  margin-bottom: 29px;
+  @include desc-font;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.production-process__wrapper {
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+.production-process__booking-button {
+  margin-bottom: 34px;
+  text-decoration: none;
+  text-align: center;
+}

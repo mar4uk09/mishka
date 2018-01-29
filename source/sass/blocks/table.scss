@@ -1,0 +1,10 @@
+.table {
+  @include desc-font;
+  line-height: 20px;
+}
+
+.table__data {
+  padding-top: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ececec;
+}
