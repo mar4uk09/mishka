@@ -5,15 +5,12 @@
   outline: 1px solid blue; /*Временная обводка*/
 }
 
-.site-list__item {
+.site-list__link {
+  display: block;
   padding-top: 30px;
   padding-bottom: 30px;
-}
-
-.site-list__link {
   @include main-font;
   font-size: 17px;
   line-height: 24px;
   text-decoration: none;
 }
-

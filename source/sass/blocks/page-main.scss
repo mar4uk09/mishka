@@ -2,7 +2,7 @@
   margin: 0 auto;
   width: 320px;
   background-color: $main-bgcolor;
-  outline: 1px solid red; /*Временная обводка*/
+  outline: 1px solid red;/*Временная обводка*/
 }
 
 .page-main__title {
@@ -29,4 +29,4 @@
   @include desc-font;
   font-size: 13px;
   line-height: 24px;
- }
+}
