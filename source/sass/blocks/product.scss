@@ -12,6 +12,7 @@
 .product__title {
   margin: 0;
   padding-bottom: 7px;
+
   @include main-font;
   font-size: 25px;
   line-height: 30px;
@@ -27,6 +28,7 @@
 .product__description {
   margin-top: 30px;
   margin-bottom: 20px;
+
   @include desc-font;
   line-height: 24px;
 }
@@ -41,6 +43,7 @@
 
 .product__price {
   padding-bottom: 28px;
+
   @include main-font;
   font-size: 17px;
   line-height: 24px;

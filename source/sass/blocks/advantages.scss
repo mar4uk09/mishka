@@ -8,6 +8,7 @@
 
 .advantages__text {
   padding-bottom: 38px;
+
   @include main-font;
   font-size: 25px;
   line-height: 30px;
@@ -22,6 +23,7 @@
 .advantages__list-item {
   padding-top: 60px;
   padding-bottom: 36px;
+
   @include main-font;
   font-size: 17px;
   line-height: 20px;

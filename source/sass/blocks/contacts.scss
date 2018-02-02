@@ -4,13 +4,12 @@
   padding-bottom: 40px;
   background-color: $main-bgcolor;
   outline: 1px solid blue;/*Временно для обводки*/
-
-
 }
 
 .contacts__title {
   margin: 0;
   padding-bottom: 38px;
+
   @include main-font;
   font-size: 18px;
   line-height: 30px;
@@ -18,6 +17,7 @@
 
 .contacts__table {
   margin-bottom: 33px;
+
   @include desc-font;
   font-size: 15px;
   line-height: 30px;

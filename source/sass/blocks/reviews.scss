@@ -8,6 +8,7 @@
 
 .reviews__title {
   padding-bottom: 33px;
+
   @include main-font;
   font-size: 25px;
   line-height: 30px;
@@ -20,6 +21,7 @@
 .reviews__text {
   margin: 0;
   padding-bottom: 38px;
+
   @include desc-font;
   font-size: 15px;
   line-height: 30px;
@@ -27,6 +29,7 @@
 
 .reviews__author {
   padding-bottom: 12px;
+
   @include main-font;
   font-size: 17px;
   font-style: normal;
@@ -36,6 +39,7 @@
 .reviews__author-email {
   display: block;
   padding-bottom: 35px;
+
   @include desc-font;
   font-size: 17px;
   line-height: 30px;

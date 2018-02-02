@@ -15,5 +15,5 @@
 .page-footer__copyright {
   @include main-font;
   font-size: 19px;
-  line-height: 18px;/*По макету указан line-height меньше font-size. Исправить на какое значение?*/
+  line-height: 18px;
 }

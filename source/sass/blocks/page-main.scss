@@ -11,6 +11,7 @@
   padding-top: 76px;
   padding-bottom: 74px;
   border-top: 1px solid #ececec;
+
   @include main-font;
   font-size: 27px;
   line-height: 30px;
@@ -26,6 +27,7 @@
   @include side-paddings;
   margin-top: 28px;
   margin-bottom: 30px;
+
   @include desc-font;
   font-size: 13px;
   line-height: 24px;
