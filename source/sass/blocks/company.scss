@@ -1,0 +1,40 @@
+.company {
+  background-color: #fbfbfb;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-position: 50% -12%;
+  background-repeat: no-repeat;
+  outline: 1px solid blue;/*Временно для обводки*/
+}
+
+.company__slogan {
+  display: block;
+
+  @include side-paddings;
+  padding-top: 75px;
+  padding-bottom: 120px;
+
+  @include main-font;
+  font-size: 27px;
+  line-height: 30px;
+}
+
+.company-categories {
+  text-decoration: none;
+}
+
+.company-categories__block {
+  padding: 30px;
+
+  @include main-font;
+  color: #ffffff;
+  font-size: 19px;
+  line-height: 24px;
+}
+
+.company-categories__block--interior {
+  background-color: #63d1bb;
+}
+
+.company-categories__block--toys {
+  background-color: #56c3b2;
+}

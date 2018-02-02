@@ -1,0 +1,51 @@
+.product {
+  background-color: $main-bgcolor;
+  outline: 1px solid blue; /*Временная обводка*/
+}
+
+.product__wrapper {
+  @include side-paddings;
+  padding-top: 34px;
+  padding-bottom: 36px;
+}
+
+.product__title {
+  margin: 0;
+  padding-bottom: 7px;
+
+  @include main-font;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.product__top {
+  @include main-font;
+  font-size: 17px;
+  line-height: 20px;
+  color: #63d1bb;
+}
+
+.product__description {
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+  @include desc-font;
+  line-height: 24px;
+}
+
+.product__options {
+  margin-bottom: 28px;
+}
+
+.product__image {
+  margin-bottom: 30px;
+}
+
+.product__price {
+  padding-bottom: 28px;
+
+  @include main-font;
+  font-size: 17px;
+  line-height: 24px;
+  color: #444444;
+}

@@ -1,0 +1,34 @@
+.advantages {
+  @include side-paddings;
+  padding-top: 34px;
+  padding-bottom: 26px;
+  background-color: $main-bgcolor;
+  outline: 1px solid blue;/*Временно для обводки*/
+}
+
+.advantages__text {
+  padding-bottom: 38px;
+
+  @include main-font;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.advantages__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.advantages__list-item {
+  padding-top: 60px;
+  padding-bottom: 36px;
+
+  @include main-font;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.advantages__list-item:last-child {
+  padding-bottom: 0;
+}

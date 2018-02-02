@@ -1,0 +1,41 @@
+.order {
+  padding-bottom: 55px;
+}
+
+.order__legend {
+  @include main-font;
+  color: #63d1bb;
+  font-size: 17px;
+  line-height: 16px;
+}
+
+.order__positions {
+  @include main-font;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.order__user-field,
+.order__user-field[placeholder] {
+  @include desc-font;
+  color: rgba(68, 68, 68, 0.3);
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.order__explaination {
+  margin: 0;
+  margin-bottom: 32px;
+
+  @include desc-font;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.order fieldset {
+  margin-bottom: 34px;
+}
+
+.order fieldset:last-of-type {
+  margin-bottom: 18px;
+}

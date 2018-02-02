@@ -1,0 +1,19 @@
+.page-footer {
+  width: 260px;
+  margin: 0 auto;
+  padding: 25px 30px;
+  background-color: #f1f1f1;
+  outline: 1px solid red;/*Временно для обводки*/
+}
+
+.page-footer__social {
+  padding-bottom: 27px;
+  margin-bottom: 23px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.page-footer__copyright {
+  @include main-font;
+  font-size: 19px;
+  line-height: 18px;
+}

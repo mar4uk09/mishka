@@ -1,0 +1,17 @@
+@mixin main-font {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: bold;
+  color: #000000;
+}
+
+@mixin desc-font {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  color: #444444;
+}
+
+@mixin side-paddings {
+  padding-left: 30px;
+  padding-right: 30px;
+}

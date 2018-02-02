@@ -1,0 +1,45 @@
+.modal-window {
+  padding-top: 36px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-top: 1px solid #c7c7c7;
+  border-bottom: 1px solid #c7c7c7;
+  background-color: $main-bgcolor;
+  outline: 1px solid green; /*Временная обводка*/
+}
+
+.modal-window__booking {
+  margin-bottom: 26px;
+
+  @include main-font;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.modal-window__checking-size {
+  margin-bottom: 28px;
+
+  @include desc-font;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.modal-window__booking-form {
+  margin-bottom: 47px;
+}
+
+.modal-window__sizes {
+  display: block;
+  width: 8px;
+  padding: 20px 35px;
+
+  @include main-font;
+  color: #444444;
+  font-size: 17px;
+  border: 2px solid #ececec;
+}
+
+.modal-window__wrapper {
+  margin-bottom: 30px;
+}

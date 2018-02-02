@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -37,8 +38,10 @@
           <img class="product-item__image" src="img/product1.jpg" width="260" height="195" alt="Товар - Зайчик-попрыгайчик - фото">
         </a>
         <p class="product-item__description">Рост 30 см, вес 200 г</p>
-        <span class="product-item__price">1 200 руб.</span>
-        <button class="product-item__buy-button" type="button">Купить товар</button>
+        <div class="product-item__wrapper">
+          <span class="product-item__price">1 200 руб.</span>
+          <button class="product-item__buy-button" type="button">Купить товар</button>
+        </div>
       </article>
       <article class="product-item">
         <a class="product-item__link" href="#">
@@ -46,8 +49,10 @@
           <img class="product-item__image" src="img/product2.jpg" width="260" height="195" alt="Товар - Корзинка для белья - фото">
         </a>
         <p class="product-item__description">Диаметр 15 см, высота 10 см</p>
-        <span class="product-item__price">690 руб.</span>
-        <button class="product-item__buy-button" type="button">Купить товар</button>
+        <div class="product-item__wrapper">
+          <span class="product-item__price">690 руб.</span>
+          <button class="product-item__buy-button" type="button">Купить товар</button>
+        </div>
       </article>
       <article class="product-item">
         <a class="product-item__link" href="#">
@@ -55,22 +60,26 @@
           <img class="product-item__image" src="img/product3.jpg" width="260" height="195" alt="Товар - Большая корзинка для игрушек - фото">
         </a>
         <p class="product-item__description">Диаметр 30 см, высота 30 см</p>
-        <span class="product-item__price">1 500 руб.</span>
-        <button class="product-item__buy-button" type="button">Купить товар</button>
+        <div class="product-item__wrapper">
+          <span class="product-item__price">1 500 руб.</span>
+          <button class="product-item__buy-button" type="button">Купить товар</button>
+        </div>
       </article>
       <div class="modal-window">
         <h2 class="modal-window__booking">Добавить  в корзину</h2>
         <p class="modal-window__checking-size">Выберите размер:</p>
         <form class="modal-window__booking-form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="modal-window__sizes">
-            <input class="visually-hidden" type="radio" name="product-size" value="S">S
-          </label>
-          <label class="modal-window__sizes">
-            <input class="visually-hidden" type="radio" name="product-size" value="M">M
-          </label>
-          <label class="modal-window__sizes">
-            <input class="visually-hidden" type="radio" name="product-size" value="L">L
-          </label>
+          <div class="modal-window__wrapper">
+            <label class="modal-window__sizes">
+              <input class="visually-hidden" type="radio" name="product-size" value="S">S
+            </label>
+            <label class="modal-window__sizes">
+              <input class="visually-hidden" type="radio" name="product-size" value="M">M
+            </label>
+            <label class="modal-window__sizes">
+              <input class="visually-hidden" type="radio" name="product-size" value="L">L
+            </label>
+          </div>
           <button class="modal-window__booking-button button" type="submit">Добавить</button>
         </form>
       </div>
@@ -79,8 +88,10 @@
         <video class="production-process__video" preload="metadata" controls width="260" height="150" poster="img/video.jpg">
           <source src="video/video.mp4" type="video/mp4">
         </video>
-        <p class="production-process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="production-process__booking-button button" href="#">Сделать заказ</a>
+        <div class="production-process__wrapper">
+          <p class="production-process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="production-process__booking-button button" href="#">Сделать заказ</a>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
@@ -99,7 +110,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
   </body>
