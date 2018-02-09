@@ -7,8 +7,8 @@
 
 .page-main__title {
   margin: 0;
-  margin-bottom: 30px;
-  padding-top: 76px;
+  margin-bottom: 23px;
+  padding-top: 71px;
   padding-bottom: 74px;
   border-top: 1px solid #ececec;
 
@@ -25,10 +25,57 @@
 
 .page-main__description {
   @include side-paddings;
-  margin-top: 28px;
-  margin-bottom: 30px;
+  margin-top: 9px;
+  margin-bottom: 25px;
 
   @include desc-font;
   font-size: 13px;
   line-height: 24px;
+}
+
+.page-main__wrap {
+  margin-top: 29px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    width: $tablet-width;
+  }
+
+  .page-main__title {
+    margin-bottom: 81px;
+    padding-top: 93px;
+    padding-bottom: 78px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .page-main__description {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    width: $desktop-width;
+  }
+
+  .page-main__title {
+    padding-bottom: 101px;
+    margin-bottom: 131px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .page-main__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }

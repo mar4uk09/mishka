@@ -1,7 +1,7 @@
 @import "normalize.scss";
 @import "variables.scss";
 @import "mixins.scss";
-@import "fonts.scss";
+@import "scaffolding.scss";
 @import "blocks/main-header.scss";
 @import "blocks/site-list.scss";
 @import "blocks/company.scss";
@@ -15,6 +15,8 @@
 @import "blocks/reviews.scss";
 @import "blocks/contacts.scss";
 @import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
 @import "blocks/product-item.scss";
 @import "blocks/production-process.scss";
 @import "blocks/order.scss";

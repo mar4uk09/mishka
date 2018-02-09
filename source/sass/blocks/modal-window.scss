@@ -1,45 +1,91 @@
 .modal-window {
-  padding-top: 36px;
+  /*display: none;*/
+  padding-top: 31px;
   padding-left: 30px;
   padding-right: 30px;
+  padding-bottom: 47px;
   border-top: 1px solid #c7c7c7;
   border-bottom: 1px solid #c7c7c7;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
   background-color: $main-bgcolor;
-  outline: 1px solid green; /*Временная обводка*/
 }
 
 .modal-window__booking {
-  margin-bottom: 26px;
+  margin: 0;
+  margin-bottom: 11px;
 
   @include main-font;
   font-size: 25px;
   line-height: 30px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .modal-window__checking-size {
-  margin-bottom: 28px;
+  margin: 0;
+  margin-bottom: 24px;
 
   @include desc-font;
   font-size: 15px;
   line-height: 30px;
-}
-
-.modal-window__booking-form {
-  margin-bottom: 47px;
+  text-align: center;
 }
 
 .modal-window__sizes {
   display: block;
   width: 8px;
-  padding: 20px 35px;
+  padding: 9px 35px;
 
   @include main-font;
   color: #444444;
   font-size: 17px;
+  line-height: 30px;
   border: 2px solid #ececec;
 }
 
 .modal-window__wrapper {
-  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 29px;
+}
+
+.modal-window__booking-button {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: #ffffff;
+  background-color: #63d1bb;
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-window {
+    padding-top: 33px;
+    padding-left: 106px;
+    padding-right: 106px;
+    width: 566px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .modal-window__booking {
+    margin-bottom: 13px;
+    font-size: 30px;
+    line-height: 57px;
+  }
+
+  .modal-window__checking-size {
+    margin-bottom: 22px;
+    font-size: 17px;
+  }
+
+  .modal-window__sizes {
+    width: 112px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .modal-window__wrapper {
+    margin-bottom: 31px;
+  }
 }

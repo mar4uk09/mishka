@@ -1,0 +1,15 @@
+.copyright {
+  display: flex;
+  flex-direction: row;
+}
+
+.copyright__text {
+  padding-right: 24px;
+}
+
+.copyright__link {
+  width: 27px;
+  height: 34px;
+  margin-top: -5px;
+  background: url("../img/logo-htmlacademy.svg");
+}

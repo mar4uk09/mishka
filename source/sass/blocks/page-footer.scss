@@ -3,17 +3,71 @@
   margin: 0 auto;
   padding: 25px 30px;
   background-color: #f1f1f1;
-  outline: 1px solid red;/*Временно для обводки*/
+}
+
+.page-footer__logo {
+  display: none;
 }
 
 .page-footer__social {
-  padding-bottom: 27px;
-  margin-bottom: 23px;
+  padding-bottom: 26px;
+  padding-left: 58px;
+  margin-bottom: 27px;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .page-footer__copyright {
+  padding-left: 38px;
+
   @include main-font;
   font-size: 19px;
   line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    width: $tablet-width;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 40px;
+  }
+
+  .page-footer__logo {
+    display: block;
+    width: 102px;
+    height: 34px;
+    margin-right: 160px;
+  }
+
+  .page-footer__social {
+    padding-left: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+
+  .page-footer__copyright {
+    padding-left: 82px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: $desktop-width;
+    box-sizing: border-box;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .page-footer__logo {
+    margin-right: 350px;
+  }
+
+  .page-footer__copyright {
+    padding-left: 277px;
+  }
 }
