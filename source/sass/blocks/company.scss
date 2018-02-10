@@ -3,19 +3,19 @@
   background-image: url("../img/hero-mobile@1x.jpg");
   background-position: 50% -12%;
   background-repeat: no-repeat;
-  outline: 1px solid blue;/*Временно для обводки*/
 }
 
 .company__slogan {
   display: block;
 
   @include side-paddings;
-  padding-top: 75px;
-  padding-bottom: 120px;
+  padding-top: 70px;
+  padding-bottom: 122px;
 
   @include main-font;
   font-size: 27px;
   line-height: 30px;
+  text-align: center;
 }
 
 .company-categories {
@@ -23,7 +23,10 @@
 }
 
 .company-categories__block {
-  padding: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 27px;
+  padding-bottom: 28px;
 
   @include main-font;
   color: #ffffff;
@@ -37,4 +40,55 @@
 
 .company-categories__block--toys {
   background-color: #56c3b2;
+}
+
+@media (min-width: $tablet-width) {
+  .company {
+    padding-left: 50px;
+    padding-right: 50px;
+    background-size: cover;
+  }
+
+  .company__slogan {
+    padding-top: 154px;
+    padding-bottom: 372px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .company-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .company-categories {
+    width: 334px;
+  }
+
+  .company-categories__block {
+    padding-left: 36px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .company {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .company__slogan {
+    padding-bottom: 358px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .company-categories {
+    width: 525px;
+  }
+
+  .company-categories__block {
+    padding-left: 38px;
+  }
 }

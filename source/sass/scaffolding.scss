@@ -1,0 +1,41 @@
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  @include main-font;
+  font-size: 17px;
+  line-height: 20px;
+  background-color: $main-bgcolor;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: "OpenSans";
+  font-style: normal;
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "OpenSans";
+  font-style: normal;
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+}
+
+@media (max-width: $desktop-width) {
+  .desktop-only {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .mobile-only {
+    display: none;
+  }
+}

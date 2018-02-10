@@ -1,8 +1,89 @@
 .main-header {
+  display: flex;
+  flex-direction: column;
   width: 320px;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 20px 30px;
+  padding-top: 22px;
   background-color: $main-bgcolor;
-  outline: 1px solid red; /*Временная обводка*/
+}
+
+.main-header__logo {
+  display: flex;
+  padding-right: 30px;
+  padding-left: 115px;
+  padding-bottom: 22px;
+}
+
+.main-header__logo-image {
+  width: 86px;
+  height: 35px;
+}
+
+.main-nav {
+  display: flex;
+  position: relative;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: -58px;
+  right: 30px;
+  padding: 0;
+  width: 22px;
+  height: 35px;
+  border: none;
+  background-color: $main-bgcolor;
+}
+
+.main-nav--closed .main-nav__toggle {
+  background: url("../img/icon-menu-open.svg") no-repeat center;
+}
+
+.main-nav--opened .main-nav__toggle {
+  background: url("../img/icon-menu-close.svg") no-repeat center;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .main-nav__wrapper {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: $tablet-width;
+    box-sizing: border-box;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .main-header__logo {
+    width: 154px;
+    padding-right: 167px;
+    padding-left: 0;
+    min-height: 46px;/* Временно для сетки */
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    width: $desktop-width;
+    padding-top: 8px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .main-header__logo {
+    min-height: 72px;/* Временно для сетки */
+    padding-bottom: 8px;
+  }
 }

@@ -1,17 +1,45 @@
 .site-list {
+  /*display: none;*/
   list-style: none;
   padding: 0;
   margin: 0;
-  outline: 1px solid blue; /*Временная обводка*/
+}
+
+.site-list__item {
+  border-bottom: 1px solid #ececec;
+
+  &:first-child {
+    border-top: 1px solid #ececec;
+  }
 }
 
 .site-list__link {
   display: block;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  width: 320px;
+  box-sizing: border-box;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-left: 75px;
+  padding-right: 30px;
 
   @include main-font;
   font-size: 17px;
   line-height: 24px;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__link {
+    padding: 0;
+  }
+
+  .site-list__link--find {
+    order: -1;
+    width: 84px;
+  }
+
+  .site-list__link--basket {
+    order: 0;
+    width: 265px;
+  }
 }

@@ -1,17 +1,16 @@
 .product {
   background-color: $main-bgcolor;
-  outline: 1px solid blue; /*Временная обводка*/
 }
 
 .product__wrapper {
   @include side-paddings;
-  padding-top: 34px;
+  padding-top: 29px;
   padding-bottom: 36px;
 }
 
 .product__title {
   margin: 0;
-  padding-bottom: 7px;
+  padding-bottom: 5px;
 
   @include main-font;
   font-size: 25px;
@@ -26,8 +25,8 @@
 }
 
 .product__description {
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-top: 22px;
+  margin-bottom: 16px;
 
   @include desc-font;
   line-height: 24px;
@@ -38,14 +37,114 @@
 }
 
 .product__image {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .product__price {
-  padding-bottom: 28px;
+  margin: 0;
+  padding-bottom: 26px;
 
   @include main-font;
   font-size: 17px;
   line-height: 24px;
   color: #444444;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .product__wrapper {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 68px;
+  }
+
+  .product__title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 43px;
+  }
+
+  .product__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .product__top {
+    width: 130px;
+    line-height: 17px;
+    text-align: center;
+  }
+
+  .product__item-wrapper {
+    width: 290px;
+  }
+
+  .product__description {
+    margin-top: 0;
+    margin-bottom: 35px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .product__image {
+    width: 333px;
+    height: 404px;
+    outline: 1px solid black;/*Временно для обозначения границ*/
+    margin-left: 334px;
+    margin-top: -268px;
+  }
+
+  .product__price {
+    margin-top: -130px;
+    padding-bottom: 36px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product__wrapper {
+    padding-top: 130px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 96px;
+  }
+
+  .product__title-wrapper {
+    justify-content: flex-start;
+    position: relative;
+  }
+
+  .product__title {
+    order: 1;
+    z-index: 2;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .product__top {
+    align-self: center;
+    padding-left: 20px;
+    padding-right: 22px;
+  }
+
+  .product__item-wrapper {
+    margin-left: 175px;
+  }
+
+  .product__description {
+    margin-bottom: 45px;
+  }
+
+  .product__image {
+    width: 525px;
+    height: 636px;
+    margin-left: 351px;
+    margin-top: -445px;
+  }
+
+  .product__price {
+    padding-bottom: 34px;
+  }
 }
