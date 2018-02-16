@@ -46,16 +46,8 @@
   margin-bottom: 30px;
 }
 
-.order__user-phone {
-  margin-bottom: 40px;
-}
-
 .order__user-phone .order__legend {
   margin-bottom: 21px;
-}
-
-.order__user-email {
-  margin-bottom: 40px;
 }
 
 .order__user-email .order__legend {
@@ -144,10 +136,11 @@
 }
 
 .order__user-phone {
+  margin-bottom: 40px;
   position: relative;
 
   &::after {
-    content:"";
+    content: "";
     width: 25px;
     height: 24px;
     position: absolute;
@@ -158,10 +151,11 @@
 }
 
 .order__user-email {
+  margin-bottom: 40px;
   position: relative;
 
   &::after {
-    content:"";
+    content: "";
     width: 32px;
     height: 32px;
     position: absolute;
@@ -238,7 +232,7 @@
 
     &::before {
       border: 15px solid #ffffff;
-      left: 0px;
+      left: 0;
       top: 0;
     }
   }
@@ -334,7 +328,7 @@
     padding-bottom: 33px;
     margin-bottom: 0;
 
-    &:after {
+    &::after {
       right: 78px;
       bottom: 54px;
     }
@@ -344,7 +338,7 @@
     padding-bottom: 47px;
     margin-bottom: 50px;
 
-    &:after {
+    &::after {
       right: 74px;
       bottom: 59px;
     }
@@ -439,15 +433,16 @@
     width: 573px;
   }
 
-  .order__user-field--phone, .order__user-field--email {
+  .order__user-field--phone,
+  .order__user-field--email {
     width: 700px;
   }
 
-  .order__user-phone:after {
+  .order__user-phone::after {
     right: 229px;
   }
 
-  .order__user-email:after {
+  .order__user-email::after {
     right: 227px;
   }
 
