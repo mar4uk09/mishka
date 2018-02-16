@@ -4,7 +4,7 @@
 
 .product__wrapper {
   @include side-paddings;
-  padding-top: 29px;
+  padding-top: 27px;
   padding-bottom: 36px;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .product__description {
-  margin-top: 22px;
+  margin-top: 23px;
   margin-bottom: 16px;
 
   @include desc-font;
@@ -53,8 +53,8 @@
 
 @media (min-width: $tablet-width) {
   .product__wrapper {
-    padding-top: 50px;
-    padding-left: 50px;
+    padding-top: 48px;
+    padding-left: 49px;
     padding-right: 50px;
     padding-bottom: 68px;
   }
@@ -62,6 +62,7 @@
   .product__title-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-bottom: 43px;
   }
 
@@ -106,8 +107,6 @@
 @media (min-width: $desktop-width) {
   .product__wrapper {
     padding-top: 130px;
-    padding-left: 100px;
-    padding-right: 100px;
     padding-bottom: 96px;
   }
 

@@ -28,7 +28,8 @@
 }
 
 .reviews__author {
-  padding-bottom: 12px;
+  display: block;
+  padding-bottom: 2px;
 
   @include main-font;
   font-size: 17px;
@@ -38,11 +39,12 @@
 
 .reviews__author-email {
   display: block;
-  padding-bottom: 31px;
+  padding-bottom: 30px;
 
   @include desc-font;
   font-size: 17px;
   line-height: 30px;
+  text-decoration: none;
 }
 
 .reviews__next,
@@ -132,6 +134,7 @@
   .reviews__author {
     display: block;
     padding-bottom: 2px;
+    letter-spacing: 1px;
   }
 
   .reviews__buttons-wrapper {
@@ -155,10 +158,9 @@
 @media (min-width: $desktop-width) {
   .reviews {
     padding-top: 71px;
-    padding-left: 275px;
-    padding-right: 100px;
+    padding-left: 225px;
     padding-bottom: 150px;
-    background-position: 100px 0;
+    background-position: 50px 0;
   }
 
   .reviews__title {
