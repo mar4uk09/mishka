@@ -9,10 +9,10 @@
 }
 
 .main-header__logo {
-  display: flex;
-  padding-right: 30px;
-  padding-left: 115px;
-  padding-bottom: 22px;
+  display: block;
+  width: 86px;
+  margin-left: 115px;
+  margin-bottom: 18px;
 }
 
 .main-header__logo-image {
@@ -55,18 +55,26 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
     width: $tablet-width;
     box-sizing: border-box;
+    padding-top: 11px;
     padding-left: 50px;
     padding-right: 50px;
+    margin-bottom: -60px;
   }
 
   .main-header__logo {
-    width: 154px;
-    padding-right: 167px;
-    padding-left: 0;
-    min-height: 46px;/* Временно для сетки */
+    order: 2;
+    z-index: 1;
+    margin-left: -2px;
+    margin-top: -128px;
+    width: 112px;
+    height: 46px;
+  }
+
+  .main-header__logo-image {
+    width: 112px;
+    height: 46px;
   }
 
   .main-nav__toggle {
@@ -77,13 +85,18 @@
 @media (min-width: $desktop-width) {
   .main-header {
     width: $desktop-width;
-    padding-top: 8px;
-    padding-left: 100px;
-    padding-right: 100px;
+    margin-bottom: -70px;
   }
 
   .main-header__logo {
-    min-height: 72px;/* Временно для сетки */
-    padding-bottom: 8px;
+    margin-left: 450px;
+    margin-top: -150px;
+    width: 149px;
+    height: 72px;
+  }
+
+  .main-header__logo-image {
+    width: 149px;
+    height: 72px;
   }
 }

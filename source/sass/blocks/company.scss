@@ -9,7 +9,7 @@
   display: block;
 
   @include side-paddings;
-  padding-top: 70px;
+  padding-top: 71px;
   padding-bottom: 122px;
 
   @include main-font;
@@ -23,10 +23,10 @@
 }
 
 .company-categories__block {
-  padding-left: 30px;
+  padding-left: 28px;
   padding-right: 30px;
-  padding-top: 27px;
-  padding-bottom: 28px;
+  padding-top: 26px;
+  padding-bottom: 29px;
 
   @include main-font;
   color: #ffffff;
@@ -66,6 +66,7 @@
   }
 
   .company-categories__block {
+    padding-top: 27px;
     padding-left: 36px;
     font-size: 20px;
     line-height: 30px;
@@ -73,11 +74,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .company {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-
   .company__slogan {
     padding-bottom: 358px;
     font-size: 53px;

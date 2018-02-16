@@ -1,5 +1,11 @@
 .modal-window {
-  /*display: none;*/
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  margin-left: -153px;
+  margin-top: -169px;
   padding-top: 31px;
   padding-left: 30px;
   padding-right: 30px;
@@ -8,6 +14,10 @@
   border-bottom: 1px solid #c7c7c7;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
   background-color: $main-bgcolor;
+
+  &--opened {
+    display: block;
+  }
 }
 
 .modal-window__booking {
@@ -60,12 +70,13 @@
 
 @media (min-width: $tablet-width) {
   .modal-window {
+    margin-left: -283px;
+    margin-top: -169px;
     padding-top: 33px;
     padding-left: 106px;
     padding-right: 106px;
     width: 566px;
     box-sizing: border-box;
-    margin: 0 auto;
   }
 
   .modal-window__booking {

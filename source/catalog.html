@@ -11,20 +11,33 @@
         <img class="main-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин вязаных вещей Мишка">
       </a>
       <nav class="main-nav main-nav--closed">
+      <!-- Модификатор opened - открывает меню, Модификатор closed - скрывает.
+      Модификатор nojs - для выключенных скриптов: меню в потоке, переключатель не отображается-->
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link">Каталог товаров</a>
+            <li class="site-list__item site-list__item--catalog">
+              <a class="site-list__link site-list__link--catalog">Каталог товаров</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--form">
               <a class="site-list__link" href="form.html">Вязание на заказ</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--find" href="find.html">Поиск по сайту</a>
+            <li class="site-list__item site-list__item--find">
+              <a class="site-list__link" href="find.html"><span class="mobile-only">Поиск по сайту</span></a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--basket" href="basket.html">Корзина: <span class="basket-state">пока пуста</span></a>
+            <li class="site-list__item site-list__item--basket">
+              <a class="site-list__link" href="basket.html">Корзина: <span class="basket-state">пока пуста</span></a>
+            </li>
+          </ul>
+          <ul class="main-nav__list site-list site-list--aditional">
+            <li class="site-list__item site-list__item--admission">
+              <a class="site-list__link" href="admission.html">Новые поступления</a>
+            </li>
+            <li class="site-list__item site-list__item--sales">
+              <a class="site-list__link" href="sales.html">Распродажа</a>
+            </li>
+            <li class="site-list__item site-list__item--delivery">
+              Бесплатная доставка по России
             </li>
           </ul>
         </div>
@@ -74,6 +87,7 @@
         </article>
       </div>
       <div class="modal-window">
+      <!-- Для открытия модального окна задать дополнительный класс modal-window с модификатором opened-->
         <h2 class="modal-window__booking">Добавить  в корзину</h2>
         <p class="modal-window__checking-size">Выберите размер:</p>
         <form class="modal-window__booking-form" action="https://echo.htmlacademy.ru" method="post">
@@ -93,9 +107,12 @@
       </div>
       <section class="production-process">
         <h2 class="production-process__title">Процесс<br class="desktop-only"> производства</h2>
-        <video class="production-process__video" preload="metadata" width="260" height="150" poster="img/video-mobile@1x.jpg">
-          <source src="video/video.mp4" type="video/mp4">
-        </video>
+        <div class="production-process__video-wrap">
+          <video class="production-process__video" preload="metadata" width="260" height="150" poster="img/video-mobile@1x.jpg">
+            <source src="video/video.mp4" type="video/mp4">
+          </video>
+          <button class="production-process__video-button" type="button"></button>
+        </div>
         <div class="production-process__wrapper">
           <p class="production-process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
           <a class="production-process__booking-button button" href="#">Сделать заказ</a>
@@ -103,7 +120,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo">
+      <a class="page-footer__logo" href="index.html">
         <img class="page-footer__logo-image" src="img/logo-mobile.svg" width="102" height="34" alt="Магазин вязаных вещей Мишка">
       </a>
       <div class="page-footer__social social">
