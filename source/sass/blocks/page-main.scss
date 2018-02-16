@@ -1,6 +1,8 @@
 .page-main {
-  margin: 0 auto;
   width: 320px;
+  border-top: 1px solid #e7e7e7;
+  margin: 0 auto;
+  margin-top: -1px;
   background-color: $main-bgcolor;
 }
 

@@ -95,6 +95,10 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 350px 457px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   .reviews__title {
