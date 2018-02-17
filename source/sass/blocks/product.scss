@@ -5,7 +5,11 @@
 .product__wrapper {
   @include side-paddings;
   padding-top: 27px;
-  padding-bottom: 36px;
+  padding-bottom: 40px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-position: bottom;
+  background-size: 320px;
+  background-repeat: no-repeat;
 }
 
 .product__title {
@@ -57,6 +61,7 @@
     padding-left: 49px;
     padding-right: 50px;
     padding-bottom: 68px;
+    background-size: 768px;
   }
 
   .product__title-wrapper {
@@ -107,6 +112,7 @@
   .product__wrapper {
     padding-top: 130px;
     padding-bottom: 96px;
+    background-size: 1050px;
   }
 
   .product__title-wrapper {

@@ -40,11 +40,33 @@
 }
 
 .company-categories__block--interior {
+  position: relative;
   background-color: #63d1bb;
+
+  &::after {
+    content: "";
+    width: 40px;
+    height: 62px;
+    position: absolute;
+    top: 22px;
+    right: 36px;
+    background: url("../img/icon-interior.svg") no-repeat center;
+  }
 }
 
 .company-categories__block--toys {
+  position: relative;
   background-color: #56c3b2;
+
+  &::after {
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 20px;
+    right: 26px;
+    background: url("../img/icon-toy.svg") no-repeat center;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -80,6 +102,15 @@
     padding-left: 36px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .company-categories__block--interior::after {
+    top: 22px;
+  }
+
+  .company-categories__block--toys::after {
+    top: 31px;
+    right: 33px;
   }
 }
 
