@@ -1,6 +1,8 @@
 .page-main {
-  margin: 0 auto;
   width: 320px;
+  border-top: 1px solid #e7e7e7;
+  margin: 0 auto;
+  margin-top: -1px;
   background-color: $main-bgcolor;
 }
 
@@ -47,6 +49,10 @@
     padding-bottom: 78px;
     font-size: 43px;
     line-height: 50px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    /*background-size: 1050px;*/
   }
 
   .page-main__title--form {
