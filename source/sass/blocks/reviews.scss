@@ -177,12 +177,14 @@
     line-height: 57px;
   }
 
-  .company-categories__block--interior::after {
-    top: 30px;
-  }
-
   .reviews__write {
     margin-top: 9px;
+  }
+
+  .reviews__author {
+    display: block;
+    padding-bottom: 2px;
+    letter-spacing: 0;
   }
 
   .reviews__text {

@@ -36,6 +36,7 @@
 
 .page-main__wrap {
   margin-top: 29px;
+  margin-bottom: 32px;
 }
 
 @media (min-width: $tablet-width) {
@@ -44,19 +45,19 @@
   }
 
   .page-main__title {
-    margin-bottom: 81px;
+    margin-bottom: 68px;
     padding-top: 93px;
-    padding-bottom: 78px;
+    padding-bottom: 91px;
     font-size: 43px;
     line-height: 50px;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: no-repeat;
-    background-position: bottom;
-    /*background-size: 1050px;*/
+    background-position: 0 212px;
+    background-size: 768px 23px;
   }
 
   .page-main__title--form {
-    margin-bottom: 75px;
+    margin-bottom: 61px;
   }
 
   .page-main__description {
@@ -65,6 +66,10 @@
     padding-right: 50px;
     font-size: 17px;
     line-height: 30px;
+  }
+
+  .page-main__wrap {
+    margin-bottom: 51px;
   }
 }
 
@@ -78,6 +83,8 @@
     margin-bottom: 131px;
     font-size: 53px;
     line-height: 57px;
+    background-position: 0 236px;
+    background-size: 1150px 34px;
   }
 
   .page-main__title--form {
@@ -93,6 +100,7 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 0;
     padding-left: 50px;
     padding-right: 50px;
   }
