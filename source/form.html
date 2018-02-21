@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
+    <link rel="preload" href="/fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="/fonts/opensans.woff2" as="font">
     <link href="css/style.min.css" rel="stylesheet">
     <script>
       // Picture element HTML5 shiv
@@ -20,7 +22,7 @@
           <img class="main-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин вязаных вещей Мишка">
         </picture>
       </a>
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
       <!-- Модификатор opened - открывает меню, Модификатор closed - скрывает.
       Модификатор nojs - для выключенных скриптов: меню в потоке, переключатель не отображается-->
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -59,7 +61,7 @@
       <form class="page-main__form order" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="order__type-field">
           <div class="order__type">
-            <h2 class="order__legend">ТИП</h2>
+            <h2 class="order__legend">Тип</h2>
             <div class="order__type-wrapper">
               <input class="order__radio-button visually-hidden" type="radio" name="type of product" value="accessories" id="accessories" checked>
               <label class="order__positions order__positions--radio" for="accessories">Аксессуар для интерьера</label>
@@ -120,7 +122,7 @@
         </fieldset>
         <div class="order__button-wrap">
           <p class="order__explaination">*Поля обязательны для заполнения</p>
-          <button class="order__button button" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
+          <button class="order__button button" type="submit">Отправить заказ</button>
         </div>
       </form>
     </main>
@@ -146,5 +148,21 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>

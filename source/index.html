@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
+    <link rel="preload" href="/fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="/fonts/opensans.woff2" as="font">
     <link href="css/style.min.css" rel="stylesheet">
     <script>
       // Picture element HTML5 shiv
@@ -20,7 +22,7 @@
           <img class="main-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин вязаных вещей Мишка">
         </picture>
       </a>
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
       <!-- Модификатор opened - открывает меню, модификатор closed - скрывает.
       Модификатор nojs - для выключенных скриптов: меню в потоке, переключатель не отображается-->
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -96,24 +98,26 @@
               </picture>
             </div>
             <p class="product__price">Цена: 990 руб.</p>
-            <button class="product__order button" type="button">ЗАКАЗАТЬ</button>
+            <button class="product__order button" type="button">Заказать</button>
           </div>
         </div>
         <div class="modal-window">
-        <!-- Для открытия модального окна задать дополнительный класс modal-window с модификатором opened-->
-          <h2 class="modal-window__booking">Добавить<br class="mobile-only"> в корзину</h2>
-          <p class="modal-window__checking-size">Выберите размер:</p>
-          <form class="modal-window__booking-form" action="https://echo.htmlacademy.ru" method="post">
-            <div class="modal-window__wrapper">
-              <input class="modal-window__radio visually-hidden" type="radio" name="product-size" value="S" id="s-size" checked>
-              <label class="modal-window__sizes" for="s-size">S</label>
-              <input class="modal-window__radio visually-hidden" type="radio" name="product-size" value="M" id="m-size">
-              <label class="modal-window__sizes" for="m-size">M</label>
-              <input class="modal-window__radio visually-hidden" type="radio" name="product-size" value="L" id="l-size">
-              <label class="modal-window__sizes" for="l-size">L</label>
-            </div>
-            <button class="modal-window__booking-button button" type="submit">Добавить</button>
-          </form>
+          <div class="modal-window__overlay"></div>
+          <div class="modal-window__block">
+            <h2 class="modal-window__booking">Добавить<br class="mobile-only"> в корзину</h2>
+            <p class="modal-window__checking-size">Выберите размер:</p>
+            <form class="modal-window__booking-form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="modal-window__wrapper">
+                <input class="modal-window__radio visually-hidden" type="radio" name="product-size" value="S" id="s-size" checked>
+                <label class="modal-window__sizes" for="s-size">S</label>
+                <input class="modal-window__radio visually-hidden" type="radio" name="product-size" value="M" id="m-size">
+                <label class="modal-window__sizes" for="m-size">M</label>
+                <input class="modal-window__radio visually-hidden" type="radio" name="product-size" value="L" id="l-size">
+                <label class="modal-window__sizes" for="l-size">L</label>
+              </div>
+              <button class="modal-window__booking-button button" type="submit">Добавить</button>
+            </form>
+          </div>
         </div>
       </section>
       <section class="advantages">
@@ -167,7 +171,7 @@
           </div>
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.3014091295438!2d30.32227587169763!3d59.93873255974802!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2z0JTQvtGF0L7QtNC90YvQuSDQtNC-0Lwg0J0uINCQLiDQnNC10LvRjNGG0LXRgNCw!5e0!3m2!1sru!2s!4v1518848215726" allowfullscreen></iframe>
         </div>
-        <a class="contacts__write button" href="feadback.html">НАпишите нам</a>
+        <a class="contacts__write button" href="feadback.html">Напишите нам</a>
       </section>
     </main>
     <footer class="page-footer">
@@ -192,5 +196,50 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
+    <script>
+      var order = document.querySelectorAll(".product__order");
+      var popup = document.querySelector(".modal-window__block");
+      var overlay = document.querySelector(".modal-window__overlay");
+
+      for (var i=0; i<order.length; i++) {
+        order[i].addEventListener("click", function (evt) {
+          evt.preventDefault();
+          popup.classList.add("modal-window__block--opened");
+          overlay.classList.add("modal-window__overlay--opened");
+        })
+      };
+
+      window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+          if (popup.classList.contains("modal-window__block--opened")) {
+            popup.classList.remove("modal-window__block--opened");
+            overlay.classList.remove("modal-window__overlay--opened")
+          }
+        }
+      });
+
+      overlay.addEventListener("click", function() {
+        if (popup.classList.contains("modal-window__block--opened")) {
+          popup.classList.remove("modal-window__block--opened");
+          overlay.classList.remove("modal-window__overlay--opened");
+        }
+      });
+    </script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-.modal-window {
+.modal-window__block {
   display: none;
   position: fixed;
   top: 50%;
@@ -16,6 +16,21 @@
   border-bottom: 1px solid #c7c7c7;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
   background-color: $main-bgcolor;
+
+  &--opened {
+    display: block;
+  }
+}
+
+.modal-window__overlay {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(#ffffff, 0.9);
 
   &--opened {
     display: block;
@@ -75,7 +90,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .modal-window {
+  .modal-window__block {
     margin-left: -283px;
     margin-top: -169px;
     padding-top: 33px;

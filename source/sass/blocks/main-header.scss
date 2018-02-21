@@ -34,6 +34,7 @@
   height: 35px;
   border: none;
   background-color: $main-bgcolor;
+  outline: none;
 }
 
 .main-nav--closed .main-nav__toggle {
@@ -44,9 +45,17 @@
   background: url("../img/icon-menu-close.svg") no-repeat center;
 }
 
+.main-nav--nojs .main-nav__toggle {
+  background: none;
+}
+
 @media (max-width: $mobile-width-only) {
   .main-nav--closed .main-nav__wrapper {
     display: none;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    display: block;
   }
 }
 
